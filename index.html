@@ -383,12 +383,12 @@
                     </div>
                 </div>
             </button>
-            <form class="search-form" action="/search" method="get">
-                <input type="text" name="q" class="search-input" placeholder="What do you want to learn?">
-                <button type="submit" class="search-button">
-                    <i class="fas fa-search"></i>
-                </button>
-            </form>
+           <form class="search-form" action="https://www.google.com/search" method="get">
+    <input type="text" name="q" class="search-input" placeholder="What do you want to learn?">
+    <button type="submit" class="search-button">
+        <i class="fas fa-search"></i>
+    </button>
+</form>
             <a class="signIn" href="#"><span>Sign In</span></a>
             <a class="register" href="#"><span>Register for free</span></a>
         </div>
@@ -606,6 +606,7 @@
                 if (email === storedEmail && password === storedPassword) {
                     alert('Login successful!');
                     loginPopup.style.display = 'none';
+                    localStorage.setItem('isLoggedIn', 'true');
                     window.location.href = 'main.html'; // Redirect to main page after login
                     loginForm.reset();
                 } else {

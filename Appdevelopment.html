@@ -480,7 +480,7 @@
                     </div>
                 </div>
             </button>
-            <form class="search-form" action="/search" method="get">
+            <form class="search-form" action="https://www.google.com/search" method="get">
                 <input type="text" name="q" class="search-input" placeholder="What do you want to learn?">
                 <button type="submit" class="search-button">
                     <i class="fas fa-search"></i>
@@ -729,23 +729,35 @@
     
 
     <script>
-       document.addEventListener("DOMContentLoaded", function() {
-            var fullname = localStorage.getItem("fullname");
-            var email = localStorage.getItem("email");
+       function checkLoginStatus() {
+            const isLoggedIn = localStorage.getItem('isLoggedIn');
+            if (isLoggedIn !== 'true') {
+                window.location.href = 'index.html';  // Redirect to login page if not logged in
+            } else {
+                displayUserProfile();
+            }
+        }
+
+        function displayUserProfile() {
+            const fullname = localStorage.getItem("fullname");
+            const email = localStorage.getItem("email");
 
             if (fullname && email) {
                 document.getElementById("profileIcon").textContent = fullname.charAt(0);
                 document.getElementById("profileName").textContent = "Name: " + fullname;
                 document.getElementById("profileEmail").textContent = "Email: " + email;
             }
+        }
 
-            var profileIcon = document.getElementById("profileIcon");
-            var profileDropdown = document.getElementById("profileDropdown");
+        document.addEventListener("DOMContentLoaded", function() {
+            checkLoginStatus();
+
+            const profileIcon = document.getElementById("profileIcon");
+            const profileDropdown = document.getElementById("profileDropdown");
 
             profileIcon.addEventListener("click", function() {
                 profileDropdown.style.display = profileDropdown.style.display === "block" ? "none" : "block";
             });
-
 
             document.addEventListener("click", function(event) {
                 if (!profileIcon.contains(event.target) && !profileDropdown.contains(event.target)) {
@@ -753,12 +765,12 @@
                 }
             });
 
-            var videoThumbnails = document.querySelectorAll(".video-grid img");
+            const videoThumbnails = document.querySelectorAll(".video-grid img");
             videoThumbnails.forEach(function(thumbnail) {
                 thumbnail.addEventListener("click", function() {
-                    var fullname = localStorage.getItem("fullname");
+                    const fullname = localStorage.getItem("fullname");
                     if (fullname) {
-                        var videoId = thumbnail.getAttribute("data-video-id");
+                        const videoId = thumbnail.getAttribute("data-video-id");
                         showVideoPlayer(videoId);
                     } else {
                         alert("Please log in to view the video.");
@@ -769,15 +781,15 @@
         });
 
         function showVideoPlayer(videoId) {
-            var videoPlayer = document.getElementById("videoPlayer");
-            var videoIframe = document.getElementById("videoIframe");
+            const videoPlayer = document.getElementById("videoPlayer");
+            const videoIframe = document.getElementById("videoIframe");
             videoIframe.src = "https://www.youtube.com/embed/" + videoId;
             videoPlayer.style.display = "flex";
         }
 
         function closeVideoPlayer() {
-            var videoPlayer = document.getElementById("videoPlayer");
-            var videoIframe = document.getElementById("videoIframe");
+            const videoPlayer = document.getElementById("videoPlayer");
+            const videoIframe = document.getElementById("videoIframe");
             videoIframe.src = "";
             videoPlayer.style.display = "none";
         }
@@ -785,6 +797,11 @@
         function logout() {
             window.location.href = "index.html";
         }
+
+        window.onload = function() {
+            checkLoginStatus();
+            document.getElementById('logoutButton').addEventListener('click', logout);
+        };
     </script>
 </body>
 </html>
