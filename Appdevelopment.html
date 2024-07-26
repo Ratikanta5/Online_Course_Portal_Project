@@ -429,6 +429,11 @@
     </style>
 </head>
 <body>
+    <!-- for buffering -->
+    <div id="buffer-container">
+        <iframe src="buffer.html" style="border: none; width: 100%; height: 100vh;"></iframe>
+    </div>
+<!-- main content -->
     <div class="layout">
         <div class="nav1">
             <img src="mainLogo.jpg" alt="GIFT" width="80" height="34" loading="lazy">
@@ -443,13 +448,11 @@
                     </div>
                     <div class="dropdown-item">Programming Languages
                         <div class="dropdown-submenu">
-                            <div class="dropdown-item">Java</div>
-                            <div class="dropdown-item">Data structure and algorithm using Java</div>
-                            <div class="dropdown-item">Python</div>
-                            <div class="dropdown-item">JavaScript</div>
-                            <div class="dropdown-item">Html and Css</div>
-                            <div class="dropdown-item">python Pandas</div>
-                            <div class="dropdown-item">Django</div>
+                            <a href="Languages.html#java" class="dropdown-item">Java</a>
+                            <a href="Languages.html" class="dropdown-item">Python</a>
+                            <a href="Languages.html#html" class="dropdown-item">HTML</a>
+                            <a href="Languages.html#css" class="dropdown-item">CSS</a>
+                            <a href="Languages.html#javascript" class="dropdown-item">javaScript</a>
                         </div>
                     </div>
                     <div class="dropdown-item">Business
@@ -802,6 +805,21 @@
             checkLoginStatus();
             document.getElementById('logoutButton').addEventListener('click', logout);
         };
+
+          // for showing the buffer
+    // Get the buffer container element
+const bufferContainer = document.getElementById('buffer-container');
+
+// Show the buffer container when the page starts loading
+document.addEventListener('DOMContentLoaded', () => {
+  bufferContainer.style.display = 'block';
+});
+
+// Hide the buffer container when the page has finished loading
+window.addEventListener('load', () => {
+  bufferContainer.style.display = 'none';
+});
+
     </script>
 </body>
 </html>

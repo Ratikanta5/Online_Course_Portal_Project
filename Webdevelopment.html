@@ -429,6 +429,11 @@
     </style>
 </head>
 <body>
+        <!-- for buffering -->
+        <div id="buffer-container">
+            <iframe src="buffer.html" style="border: none; width: 100%; height: 100vh;"></iframe>
+        </div>
+    <!-- main content -->
     <div class="layout">
         <div class="nav1">
             <img src="mainLogo.jpg" alt="GIFT" width="80" height="34" loading="lazy">
@@ -961,6 +966,20 @@
             checkLoginStatus();
             document.getElementById('logoutButton').addEventListener('click', logout);
         };
+          // for showing the buffer
+    // Get the buffer container element
+const bufferContainer = document.getElementById('buffer-container');
+
+// Show the buffer container when the page starts loading
+document.addEventListener('DOMContentLoaded', () => {
+  bufferContainer.style.display = 'block';
+});
+
+// Hide the buffer container when the page has finished loading
+window.addEventListener('load', () => {
+  bufferContainer.style.display = 'none';
+});
+
     </script>
 </body>
 </html>

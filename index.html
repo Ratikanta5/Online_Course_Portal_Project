@@ -330,10 +330,14 @@
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-    </style>
+</style>
 </head>
 <body>
-    <!-- Your existing HTML structure -->
+    <!-- for buffering -->
+    <div id="buffer-container">
+        <iframe src="buffer.html" style="border: none; width: 100%; height: 100vh;"></iframe>
+    </div>
+<!-- main content -->
     <div class="layout">
         <div class="nav1">
             <img src="mainLogo.jpg" alt="GIFT" width="80" height="34" loading="lazy">
@@ -570,6 +574,19 @@
                 const fullname = registerForm.querySelector('#registerFullname').value;
                 const email = registerForm.querySelector('#registerEmail').value;
                 const password = registerForm.querySelector('#registerPassword').value;
+                
+                // if the registration form is blank
+                if (fullname === '' || email === '' || password === '') {
+                alert('Please fill in all fields.');
+                return; // Stop the function if validation fails
+                }
+
+                // if the user register with same email it shows
+                
+                if (localStorage.getItem('email') === email) {
+                alert('This email is already registered. Please use a different email.');
+                return; // Stop the function if the email is already registered
+                }
 
                 // Save user data to localStorage
                 localStorage.setItem('fullname', fullname);
@@ -638,6 +655,22 @@
         // Redirect to main.html after login
         window.location.href = "main.html";
     }
+
+    // for showing the buffer
+    // Get the buffer container element
+const bufferContainer = document.getElementById('buffer-container');
+
+// Show the buffer container when the page starts loading
+document.addEventListener('DOMContentLoaded', () => {
+  bufferContainer.style.display = 'block';
+});
+
+// Hide the buffer container when the page has finished loading
+window.addEventListener('load', () => {
+  bufferContainer.style.display = 'none';
+});
+
+
     </script>
 </body>
 </html>
