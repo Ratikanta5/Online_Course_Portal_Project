@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .footer_container {
+            background-color: var(--background-color);
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            flex-direction: column;
+            max-width: 1280px;
+        }
+
+        .footer {
+            max-width: 1280px;
+            padding: 1.2rem 2.4rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-top {
+            width: 34%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.65rem;
+        }
+
+        .logo-svg {
+            width: 4rem;
+            height: 5rem;
+        }
+
+        .social-icon {
+            width: 1.8rem;
+            height: 1.5rem;
+        }
+
+        .logo-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 1.28rem;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
+
+        .comp-logo {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: -1.9rem;
+        }
+
+        .filler-text {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        .footer-grid {
+            display: flex;
+            flex-wrap: wrap;
+            width: 58%;
+            gap: 5.67rem;
+            padding-top: 2rem;
+        }
+
+        .footer-grid-column {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-grid-heading {
+            font-size: 1.05rem;
+            font-weight: bold;
+            color: var(--text-color);
+            margin-bottom: 1.6rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-link {
+            color: #777;
+            font-size: 0.875rem;
+            text-decoration: none;
+        }
+
+        .footer-links-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .social {
+            display: flex;
+            gap: 0.8rem;
+        }
+
+        .footer-copyright {
+            color: gray;
+            font-size: 0.775rem;
+            padding: 1.5rem 0;
+            border-top: 1px solid #E5E7EB;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .footer {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-top {
+                padding-left: 0;
+                text-align: center;
+                align-items: center;
+            }
+
+            .footer-grid {
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+
+        @media screen and (max-width: 850px) {
+            .footer-grid {
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+            }
+
+            .footer-grid-column {
+                width: 100%;
+                max-width: 400px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="footer_container">
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="comp-logo">
+                    <a class="logo-link" href="#">
+                        <img class="logo-svg" src="lg.png" alt="logo-svg">
+                        GIFT, Bhubaneswar
+                    </a>
+                </div>
+                <p class="filler-text">Seamless Learning for Brighter Future</p>
+                <div class="social">
+                    <a class="social-link" href="https://www.instagram.com/iamratikanta09?igsh=eGhzNTU0Z3JwNDEw">
+                        <img src="instagram.png" alt="instagram" class="social-icon">
+                    </a>
+                    <a class="social-link" href="#">
+                        <img src="twitter.svg" alt="twitter" class="social-icon">
+                    </a>
+                    <a class="social-link" href="http://www.linkedin.com/in/ratikanta-mohanty7606-b20436242">
+                        <img src="linkedin-fill.svg" alt="linkedin" class="social-icon">
+                    </a>
+                    <a class="social-link" href="https://github.com/Ratikanta5/Online_Course_Portal_Project">
+                        <img src="gihub.png" alt="github" class="social-icon">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-grid">
+                <!-- ...column1... -->
+                <div class="footer-grid-column">
+                    <div class="footer-grid-heading">Products</div>
+                    <ul class="footer-links-list">
+                        <li><a class="footer-link" href="#overview">Overview</a></li>
+                        <li><a class="footer-link" href="#overview">Courses</a></li>
+                        <li><a class="footer-link" href="#overview">Pricing</a></li>
+                        <li><a class="footer-link" href="#overview">Course Categories</a></li>
+                    </ul>
+                </div>
+
+                <!-- ...column2.. -->
+                <div class="footer-grid-column">
+                    <div class="footer-grid-heading">Company</div>
+                    <ul class="footer-links-list">
+                        <li><a class="footer-link" href="#overview">About</a></li>
+                        <li><a class="footer-link" href="#overview">Careers</a></li>
+                        <li><a class="footer-link" href="#overview">Our Team</a></li>
+                        <li><a class="footer-link" href="#overview">Press</a></li>
+                        <li><a class="footer-link" href="#overview">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- ....column3... -->
+                <div class="footer-grid-column">
+                    <div class="footer-grid-heading">Support</div>
+                    <ul class="footer-links-list">
+                        <li><a class="footer-link" href="#overview">Contact</a></li>
+                        <li><a class="footer-link" href="#overview">Documentation</a></li>
+                        <li><a class="footer-link" href="#overview">Chat</a></li>
+                        <li><a class="footer-link" href="#overview">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- ....column4.... -->
+                <div class="footer-grid-column">
+                    <div class="footer-grid-heading">Legal</div>
+                    <ul class="footer-links-list">
+                        <li><a class="footer-link" href="#overview">Terms of Services</a></li>
+                        <li><a class="footer-link" href="#overview">Privacy Policy</a></li>
+                        <li><a class="footer-link" href="#overview">Cookie settings</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-copyright">
+            © 2024 - Course Portal. All rights reserved.
+        </div>
+    </div>
+</body>
+
+</html>

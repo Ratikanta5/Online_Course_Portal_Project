@@ -1,0 +1,797 @@
+{
+    "MkcfB7S4fq0": [
+        {
+            "question": "What is the main topic of the video?",
+            "correct_answer": "Web Development",
+            "incorrect_answers": ["Cooking", "Gardening", "Traveling"]
+        },
+        {
+            "question": "Which programming language is primarily discussed?",
+            "correct_answer": "JavaScript",
+            "incorrect_answers": ["Python", "Ruby", "PHP"]
+        },
+        {
+            "question": "What is HTML primarily used for?",
+            "correct_answer": "Structuring content on the web",
+            "incorrect_answers": ["Styling content", "Interactivity", "Database management"]
+        },
+        {
+            "question": "Which CSS property is used to change the text color?",
+            "correct_answer": "color",
+            "incorrect_answers": ["font-color", "text-color", "background-color"]
+        },
+        {
+            "question": "Which of the following is a JavaScript framework?",
+            "correct_answer": "React",
+            "incorrect_answers": ["Laravel", "Django", "Flask"]
+        },
+        {
+            "question": "What does CSS stand for?",
+            "correct_answer": "Cascading Style Sheets",
+            "incorrect_answers": ["Colorful Style Sheets", "Creative Style Sheets", "Computer Style Sheets"]
+        },
+        {
+            "question": "Which HTML tag is used to define an unordered list?",
+            "correct_answer": "<ul>",
+            "incorrect_answers": ["<ol>", "<li>", "<list>"]
+        },
+        {
+            "question": "Which HTML attribute is used to define inline styles?",
+            "correct_answer": "style",
+            "incorrect_answers": ["class", "id", "css"]
+        },
+        {
+            "question": "Which protocol is primarily used for the web?",
+            "correct_answer": "HTTP",
+            "incorrect_answers": ["FTP", "SMTP", "SSH"]
+        },
+        {
+            "question": "Which HTML element is used for creating hyperlinks?",
+            "correct_answer": "<a>",
+            "incorrect_answers": ["<link>", "<href>", "<nav>"]
+        },
+        {
+            "question": "Which of the following is a backend language?",
+            "correct_answer": "Node.js",
+            "incorrect_answers": ["HTML", "CSS", "JavaScript"]
+        },
+        {
+            "question": "Which HTML attribute is used to provide alternative text for an image?",
+            "correct_answer": "alt",
+            "incorrect_answers": ["src", "title", "href"]
+        }
+    ],
+    
+        "JonnQuQDThc": [
+            {
+                "question": "What is the primary focus of Artificial Intelligence?",
+                "correct_answer": "Creating intelligent machines",
+                "incorrect_answers": ["Developing software", "Enhancing human cognition", "Building physical robots"]
+            },
+            {
+                "question": "Which of the following is a common application of AI?",
+                "correct_answer": "Image recognition",
+                "incorrect_answers": ["Spreadsheet creation", "Web development", "Database design"]
+            },
+            {
+                "question": "What does 'AI' stand for?",
+                "correct_answer": "Artificial Intelligence",
+                "incorrect_answers": ["Automated Interaction", "Augmented Interface", "Analytical Input"]
+            },
+            {
+                "question": "Which programming language is frequently used in AI development?",
+                "correct_answer": "Python",
+                "incorrect_answers": ["HTML", "CSS", "PHP"]
+            },
+            {
+                "question": "What is 'machine learning' in the context of AI?",
+                "correct_answer": "A subset of AI focused on learning from data",
+                "incorrect_answers": ["Programming automation", "A type of AI hardware", "Human-computer interaction"]
+            },
+            {
+                "question": "Which algorithm is commonly used in AI for classification tasks?",
+                "correct_answer": "Decision Tree",
+                "incorrect_answers": ["Bubble Sort", "Merge Sort", "Quick Sort"]
+            },
+            {
+                "question": "What is the role of neural networks in AI?",
+                "correct_answer": "To mimic the human brain for pattern recognition",
+                "incorrect_answers": ["To store large amounts of data", "To handle database queries", "To manage web servers"]
+            },
+            {
+                "question": "Which field of AI deals with natural language processing?",
+                "correct_answer": "Understanding and generating human language",
+                "incorrect_answers": ["Voice recognition", "Data mining", "Cryptography"]
+            },
+            {
+                "question": "Which of the following is an example of AI in everyday life?",
+                "correct_answer": "Voice assistants like Siri or Alexa",
+                "incorrect_answers": ["Excel formulas", "Video conferencing tools", "Web browsers"]
+            },
+            {
+                "question": "Which term refers to the ability of AI to improve itself over time?",
+                "correct_answer": "Self-learning",
+                "incorrect_answers": ["Data processing", "Automation", "Algorithmic efficiency"]
+            }
+        ],
+        "cKEf8H9cQGM": [
+        {
+            "question": "What is the primary goal of ethical hacking?",
+            "correct_answer": "To identify and fix security vulnerabilities",
+            "incorrect_answers": ["To steal sensitive data", "To disrupt services", "To install malware"]
+        },
+        {
+            "question": "Which of the following is a common tool used in ethical hacking?",
+            "correct_answer": "Nmap",
+            "incorrect_answers": ["Photoshop", "AutoCAD", "Final Cut Pro"]
+        },
+        {
+            "question": "What does 'pen testing' stand for?",
+            "correct_answer": "Penetration Testing",
+            "incorrect_answers": ["Pencil Testing", "Penetration Techniques", "Personal Testing"]
+        },
+        {
+            "question": "Which of these is a legal requirement for ethical hacking?",
+            "correct_answer": "Obtaining permission from the target organization",
+            "incorrect_answers": ["Using only open-source tools", "Working anonymously", "Reporting only critical vulnerabilities"]
+        },
+        {
+            "question": "What is a 'zero-day' vulnerability?",
+            "correct_answer": "A vulnerability that is unknown to the software vendor",
+            "incorrect_answers": ["A virus that activates after 24 hours", "A bug that occurs on the first day of software release", "A tool used by hackers"]
+        },
+        {
+            "question": "Which of the following is a common method used in ethical hacking?",
+            "correct_answer": "Social engineering",
+            "incorrect_answers": ["Data mining", "Content management", "Software development"]
+        },
+        {
+            "question": "What is the purpose of a 'honeypot' in cybersecurity?",
+            "correct_answer": "To lure attackers and study their behavior",
+            "incorrect_answers": ["To trap legitimate users", "To accelerate network performance", "To store sensitive information"]
+        },
+        {
+            "question": "Which organization offers the Certified Ethical Hacker (CEH) certification?",
+            "correct_answer": "EC-Council",
+            "incorrect_answers": ["Microsoft", "Cisco", "CompTIA"]
+        },
+        {
+            "question": "What is the term for testing a system without any prior knowledge of the internal workings?",
+            "correct_answer": "Black box testing",
+            "incorrect_answers": ["White box testing", "Gray box testing", "Red team testing"]
+        },
+        {
+            "question": "Which type of attack involves overwhelming a system with traffic?",
+            "correct_answer": "Denial of Service (DoS)",
+            "incorrect_answers": ["Phishing", "SQL Injection", "Brute Force"]
+        }
+    ],
+    "u64gyCdqawU": [
+        {
+            "question": "Which programming language is primarily used for Android app development?",
+            "correct_answer": "Java",
+            "incorrect_answers": ["Python", "Swift", "Ruby"]
+        },
+        {
+            "question": "What is the name of the official IDE for Android development?",
+            "correct_answer": "Android Studio",
+            "incorrect_answers": ["Xcode", "Visual Studio", "Eclipse"]
+        },
+        {
+            "question": "What is an APK file in Android development?",
+            "correct_answer": "Android Package",
+            "incorrect_answers": ["Application Package", "Android Program Kit", "Application Program Kit"]
+        },
+        {
+            "question": "Which UI component is commonly used to display a list of items?",
+            "correct_answer": "RecyclerView",
+            "incorrect_answers": ["ListView", "ScrollView", "GridView"]
+        },
+        {
+            "question": "Which layout arranges its children in a single vertical or horizontal row?",
+            "correct_answer": "LinearLayout",
+            "incorrect_answers": ["RelativeLayout", "FrameLayout", "ConstraintLayout"]
+        },
+        {
+            "question": "What is the purpose of an Intent in Android?",
+            "correct_answer": "To start an activity or communicate between components",
+            "incorrect_answers": ["To design the UI", "To manage memory", "To handle user input"]
+        },
+        {
+            "question": "Which component is used to manage background tasks in Android?",
+            "correct_answer": "Service",
+            "incorrect_answers": ["Activity", "BroadcastReceiver", "ContentProvider"]
+        },
+        {
+            "question": "What is Gradle used for in Android development?",
+            "correct_answer": "Build automation",
+            "incorrect_answers": ["Version control", "Code editing", "UI design"]
+        },
+        {
+            "question": "Which of the following is a lifecycle method in an Android activity?",
+            "correct_answer": "onCreate",
+            "incorrect_answers": ["onLoad", "onDisplay", "onExecute"]
+        },
+        {
+            "question": "Which file is used to define the app's structure and components?",
+            "correct_answer": "AndroidManifest.xml",
+            "incorrect_answers": ["MainActivity.java", "build.gradle", "strings.xml"]
+        }
+    ],
+    "Mezody4yiXw": [
+        {
+            "question": "What is Django primarily used for?",
+            "correct_answer": "Web development",
+            "incorrect_answers": ["Game development", "Mobile app development", "Desktop application development"]
+        },
+        {
+            "question": "Django is a framework written in which programming language?",
+            "correct_answer": "Python",
+            "incorrect_answers": ["JavaScript", "Ruby", "Java"]
+        },
+        {
+            "question": "What is the purpose of Django's ORM?",
+            "correct_answer": "To interact with the database using Python code",
+            "incorrect_answers": ["To manage user sessions", "To handle HTTP requests", "To render HTML templates"]
+        },
+        {
+            "question": "Which file is used to define URL patterns in a Django project?",
+            "correct_answer": "urls.py",
+            "incorrect_answers": ["views.py", "models.py", "settings.py"]
+        },
+        {
+            "question": "What is the role of a view in Django?",
+            "correct_answer": "To handle logic and return HTTP responses",
+            "incorrect_answers": ["To define database models", "To manage URL routing", "To render HTML templates"]
+        },
+        {
+            "question": "What is the default database used by Django?",
+            "correct_answer": "SQLite",
+            "incorrect_answers": ["MySQL", "PostgreSQL", "MongoDB"]
+        },
+        {
+            "question": "Which command is used to create a new Django app?",
+            "correct_answer": "python manage.py startapp",
+            "incorrect_answers": ["django-admin startproject", "django-admin startapp", "python manage.py runserver"]
+        },
+        {
+            "question": "What does the 'settings.py' file contain?",
+            "correct_answer": "Configuration for the Django project",
+            "incorrect_answers": ["URL patterns", "Database models", "View functions"]
+        },
+        {
+            "question": "Which of the following is a built-in template engine in Django?",
+            "correct_answer": "Django Template Language (DTL)",
+            "incorrect_answers": ["Jinja2", "Mako", "Chameleon"]
+        },
+        {
+            "question": "What is a 'migration' in Django?",
+            "correct_answer": "A way to propagate changes to the database schema",
+            "incorrect_answers": ["A method for user authentication", "A process for template rendering", "A tool for URL routing"]
+        }
+    ],
+    "f00Kxt-PFYA": [
+        {
+            "question": "What is a web framework?",
+            "correct_answer": "A set of tools for building web applications",
+            "incorrect_answers": ["A type of database", "A programming language", "A web browser"]
+        },
+        {
+            "question": "Which of the following is a popular Python web framework?",
+            "correct_answer": "Flask",
+            "incorrect_answers": ["React", "Angular", "Vue"]
+        },
+        {
+            "question": "Which Python web framework follows the 'batteries-included' philosophy?",
+            "correct_answer": "Django",
+            "incorrect_answers": ["Flask", "Pyramid", "Bottle"]
+        },
+        {
+            "question": "What does WSGI stand for?",
+            "correct_answer": "Web Server Gateway Interface",
+            "incorrect_answers": ["Web Services Gateway Interface", "Web Server Graphics Interface", "Web Server Gateway Integration"]
+        },
+        {
+            "question": "Which component is responsible for routing in Flask?",
+            "correct_answer": "The @app.route decorator",
+            "incorrect_answers": ["The URL dispatcher", "The view function", "The template engine"]
+        },
+        {
+            "question": "Which Python web framework is known for its flexibility and simplicity?",
+            "correct_answer": "Flask",
+            "incorrect_answers": ["Django", "Pyramid", "TurboGears"]
+        },
+        {
+            "question": "What is Jinja2 used for in Flask?",
+            "correct_answer": "Rendering HTML templates",
+            "incorrect_answers": ["Database management", "Handling HTTP requests", "User authentication"]
+        },
+        {
+            "question": "Which method is used to run a Flask application?",
+            "correct_answer": "app.run()",
+            "incorrect_answers": ["flask.start()", "app.start()", "flask.run()"]
+        },
+        {
+            "question": "Which file is typically used to define routes in a Flask application?",
+            "correct_answer": "app.py",
+            "incorrect_answers": ["urls.py", "views.py", "settings.py"]
+        },
+        {
+            "question": "Which of the following is a templating engine used by Flask?",
+            "correct_answer": "Jinja2",
+            "incorrect_answers": ["Mako", "Chameleon", "Django Template Language"]
+        }
+    ],
+    "bm0OyhwFDuY": [
+        {
+            "question": "What is Java primarily used for?",
+            "correct_answer": "Building platform-independent applications",
+            "incorrect_answers": ["Web design", "Database management", "Image processing"]
+        },
+        {
+            "question": "Which company originally developed Java?",
+            "correct_answer": "Sun Microsystems",
+            "incorrect_answers": ["Microsoft", "Apple", "Google"]
+        },
+        {
+            "question": "What is the file extension for Java bytecode files?",
+            "correct_answer": ".class",
+            "incorrect_answers": [".java", ".jar", ".exe"]
+        },
+        {
+            "question": "What is the main method signature in Java?",
+            "correct_answer": "public static void main(String[] args)",
+            "incorrect_answers": ["public void main(String args)", "public static main(String[] args)", "void main(String[] args)"]
+        },
+        {
+            "question": "Which of the following is a Java development environment?",
+            "correct_answer": "Eclipse",
+            "incorrect_answers": ["PyCharm", "Xcode", "Android Studio"]
+        },
+        {
+            "question": "What is the purpose of the JVM?",
+            "correct_answer": "To run Java bytecode on any platform",
+            "incorrect_answers": ["To compile Java code", "To manage memory", "To handle I/O operations"]
+        },
+        {
+            "question": "Which of the following is a built-in Java data type?",
+            "correct_answer": "int",
+            "incorrect_answers": ["number", "decimal", "float"]
+        },
+        {
+            "question": "What is inheritance in Java?",
+            "correct_answer": "A mechanism to acquire properties of another class",
+            "incorrect_answers": ["A way to hide data", "A type of variable", "A way to create new methods"]
+        },
+        {
+            "question": "Which package is used for handling input and output in Java?",
+            "correct_answer": "java.io",
+            "incorrect_answers": ["java.util", "java.lang", "java.net"]
+        },
+        {
+            "question": "What is the keyword used to inherit a class in Java?",
+            "correct_answer": "extends",
+            "incorrect_answers": ["inherits", "implements", "derives"]
+        }
+    ],
+    "UrsmFxEIp5k": [
+        {
+            "question": "What is Python primarily known for?",
+            "correct_answer": "Its simplicity and readability",
+            "incorrect_answers": ["Its speed", "Its complex syntax", "Its compiled nature"]
+        },
+        {
+            "question": "Which of the following is a valid variable name in Python?",
+            "correct_answer": "my_variable",
+            "incorrect_answers": ["2variable", "my-variable", "my variable"]
+        },
+        {
+            "question": "Which of the following is a built-in Python data type?",
+            "correct_answer": "List",
+            "incorrect_answers": ["Array", "Tuple", "Set"]
+        },
+        {
+            "question": "What is the output of the expression `3 + 2 * 2` in Python?",
+            "correct_answer": "7",
+            "incorrect_answers": ["10", "9", "5"]
+        },
+        {
+            "question": "Which keyword is used to define a function in Python?",
+            "correct_answer": "def",
+            "incorrect_answers": ["func", "function", "lambda"]
+        },
+        {
+            "question": "Which Python data type is immutable?",
+            "correct_answer": "Tuple",
+            "incorrect_answers": ["List", "Dictionary", "Set"]
+        },
+        {
+            "question": "Which of the following is a Python loop structure?",
+            "correct_answer": "for",
+            "incorrect_answers": ["repeat", "loop", "foreach"]
+        },
+        {
+            "question": "What does the 'len()' function do in Python?",
+            "correct_answer": "Returns the number of items in an object",
+            "incorrect_answers": ["Converts the object to a string", "Returns the length of a string", "Finds the maximum value in an object"]
+        },
+        {
+            "question": "Which of the following is a Python conditional statement?",
+            "correct_answer": "if",
+            "incorrect_answers": ["when", "switch", "case"]
+        },
+        {
+            "question": "What is the output of `print('Hello' + 'World')` in Python?",
+            "correct_answer": "HelloWorld",
+            "incorrect_answers": ["Hello World", "Hello+World", "Error"]
+        }
+    ],
+    "427pAhy9dI8": [
+        {
+            "question": "What is JavaScript primarily used for?",
+            "correct_answer": "Adding interactivity to web pages",
+            "incorrect_answers": ["Styling web pages", "Structuring web pages", "Managing databases"]
+        },
+        {
+            "question": "Which keyword is used to declare a variable in JavaScript?",
+            "correct_answer": "let",
+            "incorrect_answers": ["var", "const", "declare"]
+        },
+        {
+            "question": "What is the output of `typeof null` in JavaScript?",
+            "correct_answer": "'object'",
+            "incorrect_answers": ["'null'", "'undefined'", "'string'"]
+        },
+        {
+            "question": "Which method is used to add an element to the end of an array?",
+            "correct_answer": "push()",
+            "incorrect_answers": ["pop()", "shift()", "unshift()"]
+        },
+        {
+            "question": "What is the purpose of the 'this' keyword in JavaScript?",
+            "correct_answer": "Refers to the object it belongs to",
+            "incorrect_answers": ["Refers to the global object", "Refers to the function itself", "Refers to the previous object"]
+        },
+        {
+            "question": "Which of the following is a JavaScript framework?",
+            "correct_answer": "React",
+            "incorrect_answers": ["Laravel", "Django", "Ruby on Rails"]
+        },
+        {
+            "question": "What does the 'DOM' stand for in JavaScript?",
+            "correct_answer": "Document Object Model",
+            "incorrect_answers": ["Data Object Model", "Document Oriented Model", "Data Oriented Model"]
+        },
+        {
+            "question": "Which of the following is a JavaScript loop structure?",
+            "correct_answer": "for",
+            "incorrect_answers": ["repeat", "loop", "foreach"]
+        },
+        {
+            "question": "What does 'NaN' represent in JavaScript?",
+            "correct_answer": "Not a Number",
+            "incorrect_answers": ["Negative a Number", "Null a Number", "None a Number"]
+        },
+        {
+            "question": "Which function is used to parse a string to an integer in JavaScript?",
+            "correct_answer": "parseInt()",
+            "incorrect_answers": ["parseFloat()", "Number()", "toString()"]
+        }
+    ],
+    "B9FvD1L2hAQ": [
+        {
+            "question": "What does CSS stand for?",
+            "correct_answer": "Cascading Style Sheets",
+            "incorrect_answers": ["Colorful Style Sheets", "Creative Style Sheets", "Computer Style Sheets"]
+        },
+        {
+            "question": "Which CSS property is used to change the text color?",
+            "correct_answer": "color",
+            "incorrect_answers": ["font-color", "text-color", "background-color"]
+        },
+        {
+            "question": "What is the purpose of the 'box-sizing' property in CSS?",
+            "correct_answer": "To control how the width and height of an element are calculated",
+            "incorrect_answers": ["To define the margin and padding", "To set the font size", "To apply border styles"]
+        },
+        {
+            "question": "Which CSS property is used to align text to the center?",
+            "correct_answer": "text-align",
+            "incorrect_answers": ["align-text", "center-align", "text-center"]
+        },
+        {
+            "question": "What is the default value of the 'position' property in CSS?",
+            "correct_answer": "static",
+            "incorrect_answers": ["relative", "absolute", "fixed"]
+        },
+        {
+            "question": "Which CSS property controls the space between the border and the content of an element?",
+            "correct_answer": "padding",
+            "incorrect_answers": ["margin", "border-spacing", "gap"]
+        },
+        {
+            "question": "What does the 'display: flex;' property do in CSS?",
+            "correct_answer": "It enables a flexbox layout for the container",
+            "incorrect_answers": ["It aligns elements to the center", "It makes elements invisible", "It sets the width of elements"]
+        },
+        {
+            "question": "Which CSS property is used to add shadow to text?",
+            "correct_answer": "text-shadow",
+            "incorrect_answers": ["box-shadow", "shadow", "font-shadow"]
+        },
+        {
+            "question": "What is the purpose of the 'z-index' property in CSS?",
+            "correct_answer": "To control the stacking order of positioned elements",
+            "incorrect_answers": ["To set the opacity of elements", "To define the size of elements", "To adjust the alignment of elements"]
+        },
+        {
+            "question": "Which property is used to change the background color of an element in CSS?",
+            "correct_answer": "background-color",
+            "incorrect_answers": ["color", "bg-color", "background"]
+        }
+    ],
+    "01Imoibt4as": [
+        {
+            "question": "What does SEO stand for in digital marketing?",
+            "correct_answer": "Search Engine Optimization",
+            "incorrect_answers": ["Search Engine Operation", "Search Engine Organization", "Social Engine Optimization"]
+        },
+        {
+            "question": "Which platform is commonly used for social media marketing?",
+            "correct_answer": "Facebook",
+            "incorrect_answers": ["Google", "Yahoo", "Amazon"]
+        },
+        {
+            "question": "What is the main goal of PPC advertising?",
+            "correct_answer": "To drive traffic to a website through paid ads",
+            "incorrect_answers": ["To improve organic search rankings", "To build brand awareness", "To create engaging content"]
+        },
+        {
+            "question": "What does the term 'CTR' stand for?",
+            "correct_answer": "Click-Through Rate",
+            "incorrect_answers": ["Click-Traffic Ratio", "Click-Target Rate", "Conversion-Traffic Ratio"]
+        },
+        {
+            "question": "Which of the following is a key component of a successful email marketing campaign?",
+            "correct_answer": "Personalization",
+            "incorrect_answers": ["Length of email", "Frequency of emails", "Design of website"]
+        },
+        {
+            "question": "What does 'A/B testing' involve in digital marketing?",
+            "correct_answer": "Comparing two versions of a webpage or ad to determine which performs better",
+            "incorrect_answers": ["Testing different advertising platforms", "Evaluating website security", "Analyzing social media trends"]
+        },
+        {
+            "question": "Which metric measures the percentage of website visitors who complete a desired action?",
+            "correct_answer": "Conversion Rate",
+            "incorrect_answers": ["Bounce Rate", "Click Rate", "Engagement Rate"]
+        },
+        {
+            "question": "What is a 'landing page' used for in digital marketing?",
+            "correct_answer": "To capture leads or drive conversions",
+            "incorrect_answers": ["To showcase products", "To provide customer support", "To display company news"]
+        },
+        {
+            "question": "Which tool is commonly used for tracking website traffic?",
+            "correct_answer": "Google Analytics",
+            "incorrect_answers": ["Google Ads", "Mailchimp", "Hootsuite"]
+        },
+        {
+            "question": "What is the primary purpose of content marketing?",
+            "correct_answer": "To attract and engage a target audience by providing valuable content",
+            "incorrect_answers": ["To increase website loading speed", "To improve search engine rankings", "To design attractive visuals"]
+        }
+    ],
+    "0L7kxLGxKXI": [
+        {
+            "question": "What is a common characteristic of successful entrepreneurs?",
+            "correct_answer": "Innovation",
+            "incorrect_answers": ["Risk aversion", "Following trends", "Avoiding challenges"]
+        },
+        {
+            "question": "What is a 'business model'?",
+            "correct_answer": "A plan for how a company will make money",
+            "incorrect_answers": ["A marketing strategy", "A financial forecast", "A product prototype"]
+        },
+        {
+            "question": "Which term describes a business that is started with a new and unique idea?",
+            "correct_answer": "Startup",
+            "incorrect_answers": ["Franchise", "Corporation", "Partnership"]
+        },
+        {
+            "question": "What does 'scaling' a business mean?",
+            "correct_answer": "Expanding the business to increase revenue while maintaining or reducing costs",
+            "incorrect_answers": ["Increasing product prices", "Reducing the size of the business", "Changing the business location"]
+        },
+        {
+            "question": "What is the purpose of a 'business plan'?",
+            "correct_answer": "To outline the goals, strategies, and financial projections of a business",
+            "incorrect_answers": ["To market products", "To recruit employees", "To manage day-to-day operations"]
+        },
+        {
+            "question": "What is a 'value proposition'?",
+            "correct_answer": "A statement that explains how a product or service benefits customers",
+            "incorrect_answers": ["A summary of financial data", "A list of business objectives", "An analysis of market trends"]
+        },
+        {
+            "question": "Which funding option involves raising small amounts of money from a large number of people, usually via the internet?",
+            "correct_answer": "Crowdfunding",
+            "incorrect_answers": ["Angel investing", "Venture capital", "Bank loans"]
+        },
+        {
+            "question": "What is 'market research'?",
+            "correct_answer": "The process of gathering information about consumers' needs and preferences",
+            "incorrect_answers": ["Analyzing financial statements", "Evaluating employee performance", "Tracking sales figures"]
+        },
+        {
+            "question": "What is a 'pivot' in business terms?",
+            "correct_answer": "A significant change in business strategy to adapt to market demands",
+            "incorrect_answers": ["A minor product update", "A new marketing campaign", "A change in business location"]
+        },
+        {
+            "question": "What does 'bootstrapping' mean for startups?",
+            "correct_answer": "Funding a business using personal savings or revenue from the business",
+            "incorrect_answers": ["Seeking venture capital", "Applying for government grants", "Taking out a business loan"]
+        }
+    ],
+    "6RXU3_ghHks": [
+        {
+            "question": "What is the primary role of a director in a film production?",
+            "correct_answer": "To oversee the creative aspects of a film and guide the cast and crew",
+            "incorrect_answers": ["To manage the budget", "To handle marketing and distribution", "To write the screenplay"]
+        },
+        {
+            "question": "Which term describes the process of selecting and guiding actors in a film?",
+            "correct_answer": "Directing",
+            "incorrect_answers": ["Casting", "Editing", "Screenwriting"]
+        },
+        {
+            "question": "What does 'blocking' refer to in directing?",
+            "correct_answer": "Planning the actors' movements and positioning on stage or set",
+            "incorrect_answers": ["Setting camera angles", "Writing dialogue", "Designing costumes"]
+        },
+        {
+            "question": "Which phase of film production involves planning the scenes and rehearsing with actors?",
+            "correct_answer": "Pre-production",
+            "incorrect_answers": ["Production", "Post-production", "Distribution"]
+        },
+        {
+            "question": "What is 'storyboarding' used for in film directing?",
+            "correct_answer": "To create a visual representation of each scene in a film",
+            "incorrect_answers": ["To design the film's soundtrack", "To write the script", "To manage the budget"]
+        },
+        {
+            "question": "What is the significance of 'shot composition' in directing?",
+            "correct_answer": "It determines how visual elements are arranged within the frame",
+            "incorrect_answers": ["It controls the film's pacing", "It dictates the script's dialogue", "It organizes the film's schedule"]
+        },
+        {
+            "question": "What role does a 'director of photography' play in a film production?",
+            "correct_answer": "To manage the camera work and lighting for the film",
+            "incorrect_answers": ["To cast the actors", "To design the set", "To edit the film"]
+        },
+        {
+            "question": "What is 'dailies' in film production?",
+            "correct_answer": "Footage shot each day, reviewed by the director and crew",
+            "incorrect_answers": ["Marketing materials for the film", "Budget reports", "Final edited scenes"]
+        },
+        {
+            "question": "Which term refers to the director's final review of the edited film before release?",
+            "correct_answer": "Director's cut",
+            "incorrect_answers": ["Test screening", "Previews", "Final draft"]
+        },
+        {
+            "question": "What is the purpose of 'rehearsals' in directing?",
+            "correct_answer": "To practice and refine scenes with actors before filming",
+            "incorrect_answers": ["To design the set", "To schedule the production", "To create special effects"]
+        }
+    ],
+    "dl00fOOYLOM": [
+        {
+            "question": "What does DBMS stand for?",
+            "correct_answer": "Database Management System",
+            "incorrect_answers": ["Database Management Service", "Data Base Management Software", "Digital Base Management System"]
+        },
+        {
+            "question": "Which SQL command is used to retrieve data from a database?",
+            "correct_answer": "SELECT",
+            "incorrect_answers": ["GET", "FETCH", "RETRIEVE"]
+        },
+        {
+            "question": "What is a 'primary key' in a database?",
+            "correct_answer": "A unique identifier for each record in a table",
+            "incorrect_answers": ["A field that can be duplicated", "A field used for sorting data", "A key used for encryption"]
+        },
+        {
+            "question": "What is 'normalization' in database design?",
+            "correct_answer": "The process of organizing data to reduce redundancy",
+            "incorrect_answers": ["The process of optimizing queries", "The process of indexing data", "The process of backing up data"]
+        },
+        {
+            "question": "Which SQL statement is used to update existing records in a database?",
+            "correct_answer": "UPDATE",
+            "incorrect_answers": ["MODIFY", "CHANGE", "EDIT"]
+        },
+        {
+            "question": "What does 'ACID' stand for in database transactions?",
+            "correct_answer": "Atomicity, Consistency, Isolation, Durability",
+            "incorrect_answers": ["Action, Control, Integrity, Durability", "Atomicity, Consistency, Indexing, Durability", "Atomicity, Consistency, Isolation, Data"]
+        },
+        {
+            "question": "What is a 'foreign key' in a database?",
+            "correct_answer": "A key used to link two tables together",
+            "incorrect_answers": ["A key that is unique within a table", "A key used for sorting data", "A key used for encryption"]
+        },
+        {
+            "question": "Which SQL command is used to create a new table in a database?",
+            "correct_answer": "CREATE TABLE",
+            "incorrect_answers": ["ADD TABLE", "NEW TABLE", "MAKE TABLE"]
+        },
+        {
+            "question": "What is a 'view' in a database?",
+            "correct_answer": "A virtual table based on the result of a SQL query",
+            "incorrect_answers": ["A physical table", "A data backup", "A database index"]
+        },
+        {
+            "question": "Which database model organizes data into tables with rows and columns?",
+            "correct_answer": "Relational model",
+            "incorrect_answers": ["Hierarchical model", "Network model", "Object-oriented model"]
+        }
+    ],
+    "AgyTHzjBS-c": [
+        {
+            "question": "What is a 'linked list'?",
+            "correct_answer": "A data structure where each element points to the next",
+            "incorrect_answers": ["A collection of arrays", "A type of binary tree", "A stack of elements"]
+        },
+        {
+            "question": "Which sorting algorithm has the best average-case time complexity?",
+            "correct_answer": "Merge Sort",
+            "incorrect_answers": ["Bubble Sort", "Insertion Sort", "Selection Sort"]
+        },
+        {
+            "question": "What does 'Big O notation' represent?",
+            "correct_answer": "The time complexity or space complexity of an algorithm",
+            "incorrect_answers": ["The size of a data structure", "The number of operations in an algorithm", "The type of data used in an algorithm"]
+        },
+        {
+            "question": "What is a 'binary tree'?",
+            "correct_answer": "A tree data structure where each node has at most two children",
+            "incorrect_answers": ["A tree where each node has an arbitrary number of children", "A linear data structure", "A structure for storing key-value pairs"]
+        },
+        {
+            "question": "What does 'stack' data structure use for storing elements?",
+            "correct_answer": "LIFO (Last In, First Out)",
+            "incorrect_answers": ["FIFO (First In, First Out)", "LILO (Last In, Last Out)", "FILO (First In, Last Out)"]
+        },
+        {
+            "question": "Which algorithm is used to find the shortest path in a graph?",
+            "correct_answer": "Dijkstra's Algorithm",
+            "incorrect_answers": ["Kruskal's Algorithm", "Bellman-Ford Algorithm", "Prim's Algorithm"]
+        },
+        {
+            "question": "What is a 'hash table' used for?",
+            "correct_answer": "To implement associative arrays or dictionaries",
+            "incorrect_answers": ["To store elements in sorted order", "To create a linked list", "To manage memory allocation"]
+        },
+        {
+            "question": "What is 'recursion' in programming?",
+            "correct_answer": "A function that calls itself",
+            "incorrect_answers": ["A loop that iterates over elements", "A function that takes another function as input", "A data structure for storing function references"]
+        },
+        {
+            "question": "Which data structure uses 'heap' property?",
+            "correct_answer": "Priority Queue",
+            "incorrect_answers": ["Linked List", "Stack", "Queue"]
+        },
+        {
+            "question": "What is the main advantage of using a 'graph' data structure?",
+            "correct_answer": "To represent relationships between entities",
+            "incorrect_answers": ["To store sequential data", "To organize data into hierarchies", "To manage large datasets efficiently"]
+        }
+    ]
+
+
+    
+    
+}

@@ -268,38 +268,6 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.footer {
-            background-color: skyblue;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            padding: 20px;
-        }
-        .footer-column {
-            padding: 20px;
-        }
-        .footer-column h3 {
-            margin-bottom: 10px;
-            font-size: 18px;
-            color: #333;
-        }
-        .footer-column ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .footer-column ul li {
-            margin-bottom: 8px;
-        }
-        .footer-column ul li a {
-            text-decoration: none;
-            color:black;
-            transition: color 0.3s;
-        }
-        .footer-column ul li a:hover {
-            color: #0056b3;
-        }
-        .footer a:hover {
-            text-decoration: underline;
-        }
         .figure
         {
             padding: 10px;
@@ -487,62 +455,8 @@
         </div>
     </div>
     <!-- Footer section -->
-    <div class="footer">
-        <div class="footer-column">
-            <h3>BROWSE COURSES</h3>
-            <br>
-            <ul>
-                <li><a href="#">Learn AI</a></li>
-                <li><a href="#">Learn Python</a></li>
-                <li><a href="#">Learn Architecture</a></li>
-                <li><a href="#">Learn Computer Programming</a></li>
-                <li><a href="#">Learn Software Engineering</a></li>
-                <li><a href="#">Learn Blockchain</a></li>
-                <li><a href="#">Learn Project Management</a></li>
-            </ul>
-        </div>
-
-        
-        
-        <div class="footer-column">
-            <h3>START A NEW CAREER</h3>
-            <br>
-            <ul>
-                <li><a href="#">Coding Boot Camp</a></li>
-                <li><a href="#">AI Boot Camp</a></li>
-                <li><a href="#">Data Analytics Boot Camp</a></li>
-                <li><a href="#">UX/UI Boot Camp</a></li>
-                <li><a href="#">Cybersecurity Boot Camp</a></li>
-                <li><a href="#">UX/UI Boot Camp</a></li>
-                <li><a href="#">Digital Marketing Boot Camp</a></li>
-
-            </ul>
-        </div>
-
-        
-        <div class="footer-column">
-            <h3>COMPLETE YOUR COURSE OFFLINE</h3>
-            <br>
-            <ul>
-                <li><a href="#">BACHELOR OF TECHNOLOGY</a></li>
-                <li><a href="#">DIPLOMA</a></li>
-                <li><a href="#">MASTER OF COMPUETR APPLICATION</a></li>
-                <li><a href="#">MASTER OF BUSINESS ADMINSTRATION</a></li>
-                <li><a href="#">MASTER OF TECHNOLOGY</a></li>
-                <li><a href="#">DOCTOR OF PHILOSOPHY</a></li>
-                <li><a href="#">ENGINEERING</a></li>
-
-            </ul>
-        </div>
-        <hr>
-        <hr>
-        <hr>
-        <hr>
-        <hr>
-        <hr>
-        <hr>
-        <img src="figure.jpg" alt="figure"  class="figure">
-        
+  </div>
+  <div id="footer-container"></div>
 
 
     <!-- JavaScript code -->
@@ -645,6 +559,7 @@
         // Redirect to main.html after registration
         window.location.href = "main.html";
     }
+    
 
     function loginUser() {
         var loginFirstName = document.getElementById("registerFullname").value;
@@ -670,6 +585,19 @@ window.addEventListener('load', () => {
   bufferContainer.style.display = 'none';
 });
 
+// for footer integration
+
+function loadFooter() {
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    }
+
+    // Call the function to load the footer when the page loads
+    loadFooter();
 
     </script>
 </body>

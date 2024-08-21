@@ -14,7 +14,13 @@
         body {
             margin: 0;
             padding: 0;
+            background-color: #ffffff;
+            color: #000000;
         }
+        body.dark-mode {
+        background-color: #333333;
+        color: #ffffff;
+}
         .layout {
             background-color: #f8f9fa;
             padding: 20px;
@@ -252,38 +258,7 @@
 }
 
 
-.footer {
-            background-color: skyblue;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            padding: 20px;
-        }
-        .footer-column {
-            padding: 20px;
-        }
-        .footer-column h3 {
-            margin-bottom: 10px;
-            font-size: 18px;
-            color: #333;
-        }
-        .footer-column ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .footer-column ul li {
-            margin-bottom: 8px;
-        }
-        .footer-column ul li a {
-            text-decoration: none;
-            color:black;
-            transition: color 0.3s;
-        }
-        .footer-column ul li a:hover {
-            color: #0056b3;
-        }
-        .footer a:hover {
-            text-decoration: underline;
-        }
+
         .figure
         {
             padding: 10px;
@@ -343,8 +318,9 @@
         }
         .video-item {
             position: relative;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 30px;
 }
-.video-description {
+/* .video-description {
     display: none;
     position: absolute;
     bottom: 0;
@@ -367,7 +343,7 @@
 .video-description p {
     font-size: 14px;
     line-height: 1.4;
-}
+} */
 
         .video-grid img {
             width: 100%;
@@ -376,9 +352,10 @@
         }
      
 
-        .video-grid img:hover {
-            transform: scale(1.05);
-        }
+        /* .video-grid img:hover {
+            transform: scale(1.01);
+        
+        } */
 
         .video-player {
             display: none;
@@ -422,7 +399,173 @@
             border-radius: 50%; /* Rounded corners */
             padding: 5px; /* Padding for better click area */
 }
+.success-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            display: none; /* Hidden by default */
+        }
 
+        .success-message {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .success-message img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .success-message h2 {
+            margin-top: 20px;
+            color: #4BB543;
+        }
+
+        .correct {
+            color: green;
+        }
+
+        .incorrect {
+            color: red;
+        }
+        .video-item:hover{
+            border-color: rgb(125, 178, 219);
+    border-width: 2px; /* Thicker border on hover */
+    border-style: solid;
+        }
+
+        .course-card-tittle{
+        margin-bottom: 5px;
+        height: 50px;
+        }
+        .channel{
+            margin-top: 5px;
+            height: 100px;
+        }
+
+        .video-player {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Align items vertically */
+        }
+
+        .video-player iframe {
+            width: 80%;
+            height: 80%;
+        }
+
+        .quiz-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            position: fixed; /* Fix it at the bottom of the viewport */
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+            overflow-y: auto;
+            max-height: 40%; /* Limit the height */
+        }
+
+        .toggle-container {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hide the checkbox input */
+.toggle-input {
+  display: none;
+}
+
+/* Label as the switch background */
+.toggle-label {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Sun and moon icons */
+.icon {
+  font-size: 16px;
+  color: #666;
+}
+
+/* The toggle ball */
+.toggle-ball {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  width: 26px;
+  height: 26px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  transform: translateY(-50%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Move the ball when the input is checked */
+.toggle-input:checked + .toggle-label .toggle-ball {
+  transform: translateY(-50%) translateX(30px);
+}
+
+/* Change background and icon color on toggle */
+.toggle-input:checked + .toggle-label {
+  background-color: #333;
+}
+
+.toggle-input:checked + .toggle-label .sun {
+  color: #555;
+}
+
+.toggle-input:checked + .toggle-label .moon {
+  color: #ffdc85;
+}
+
+/* Default light mode styles */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  --background-color: #333333;
+  --text-color: #ffffff;
+}
     </style>
 </head>
 <body>
@@ -486,7 +629,23 @@
                     <i class="fas fa-search"></i>
                 </button>
             </form>
-            <a class="signIn" href="#"><span>My Learning</span></a>
+            <div id="player"></div>
+            <!-- <button onclick="goToMyLearning()">My Learning</button> -->
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <div class="toggle-container">
+                <input type="checkbox" id="modeToggle" class="toggle-input">
+                <label for="modeToggle" class="toggle-label">
+                  <span class="toggle-ball"></span>
+                  <span class="icon sun">&#9728;</span> <!-- Sun icon -->
+                  <span class="icon moon">&#9790;</span> <!-- Moon icon -->
+                </label>
+              </div>
+              
             <div class="profile-container">
                 <div class="profile-icon" id="profileIcon"></div>
                 <div class="profile-dropdown" id="profileDropdown">
@@ -537,12 +696,13 @@
                     <div class="dropdown-item">Career Development</div>
                 </div>
             </button>
-            <form class="search-form" action="https://www.google.com/search" method="get">
-                <input type="text" name="q" class="search-input" placeholder="What do you want to learn?">
+            <form id="search-form" class="search-form">
+                <input type="text" name="q" id="searchInput" class="search-input" placeholder="What do you want to learn?">
                 <button type="submit" class="search-button">
                     <i class="fas fa-search"></i>
                 </button>
             </form>
+            
         </div>
 
         <div class="content">
@@ -552,15 +712,28 @@
                     <div class="video-item" data-video-id="JonnQuQDThc">
                         <img src="https://img.youtube.com/vi/JonnQuQDThc/0.jpg" data-video-id="JonnQuQDThc">
                         <div class="video-description">
-                            <h4>All About Machine Learning & Deep Learning in 2024</h4>
-                            <p>Explore the cutting-edge world of Machine Learning (ML) and Artificial Intelligence (AI) in 2024 with our latest YouTube video! </p>
-                               
+                            <span style="display: table-cell; vertical-align: middle; font-family: Roboto; font-size: 14px; color: rgb(0, 102, 255); --darkreader-inline-color: #339cff;" data-toggle="tooltip" data-placement="right" class="course-card-tittle" title="3D Printing and Design for Educators" data-darkreader-inline-color="">
+                                <strong class="course-tittle">All About Machine Learning & Deep Learning in 2024</strong>
+                            </span>
                         </div>
+                        
+                        <span class="channel" style="font-family: Roboto; color: rgb(102, 102, 102); font-size: 14px; --darkreader-inline-color: #a8a095;" data-toggle="tooltip" title="Dr. Sharad K. Pradhan" data-darkreader-inline-color="">
+                      Simple Learn
+                  </span>
+                  <p>Explore the cutting-edge world of Machine Learning (ML) and Artificial Intelligence (AI) in 2024 with our latest YouTube video! </p>
                     </div> <div class="video-item" data-video-id="MkcfB7S4fq0">
                         <img src="https://img.youtube.com/vi/MkcfB7S4fq0/0.jpg" data-video-id="MkcfB7S4fq0">
                         <div class="video-description">
-                            <h4>All About web development  in 2024</h4>
-                            <p>2024! video by College wallah </p>
+                            <div class="video-description">
+                                <span style="display: table-cell; vertical-align: middle; font-family: Roboto; font-size: 14px; color: rgb(0, 102, 255); --darkreader-inline-color: #339cff;" data-toggle="tooltip" data-placement="right" class="course-card-tittle" title="3D Printing and Design for Educators" data-darkreader-inline-color="">
+                                    <strong class="course-tittle">All About web development  in 2024</strong>
+                                </span>
+                            </div>
+                            
+                            <span class="channel" style="font-family: Roboto; color: rgb(102, 102, 102); font-size: 14px; --darkreader-inline-color: #a8a095;" data-toggle="tooltip" title="Dr. Sharad K. Pradhan" data-darkreader-inline-color="">
+                          Apna College
+                      </span>
+                      <p>2024! video by College wallah </p>
                                
                         </div>
                     </div> <div class="video-item" data-video-id="cKEf8H9cQGM">
@@ -652,17 +825,20 @@
                     </div>  <div class="video-item" data-video-id="dl00fOOYLOM">
                         <img src="https://img.youtube.com/vi/dl00fOOYLOM/0.jpg" data-video-id="dl00fOOYLOM">
                         <div class="video-description">
-                            <h4>
-                                Complete DBMS in 1 Video (With Notes) || For Placement Interviews</h4>
-                            <p>Are you preparing for placement interviews and looking to strengthen your knowledge of Database Management Systems (DBMS)? 
-                            </p>
-                               
+                            <span style="display: table-cell; vertical-align: middle; font-family: Roboto; font-size: 14px; color: rgb(0, 102, 255); --darkreader-inline-color: #339cff;" data-toggle="tooltip" data-placement="right" class="course-card-tittle" title="3D Printing and Design for Educators" data-darkreader-inline-color="">
+                                <strong class="course-tittle">
+                                    Complete DBMS in 1 Video (With Notes) || For Placement Interviews</strong>
+                            </span>
                         </div>
+                        
+                        <span class="channel" style="font-family: Roboto; color: rgb(102, 102, 102); font-size: 14px; --darkreader-inline-color: #a8a095;" data-toggle="tooltip" title="Dr. Sharad K. Pradhan" data-darkreader-inline-color="">
+                      Love Babbar
+                  </span>
+                  <p>Are you preparing for placement interviews and looking to strengthen your knowledge of Database Management Systems (DBMS)?  </p>
                     </div>  <div class="video-item" data-video-id="AgyTHzjBS-c">
                         <img src="https://img.youtube.com/vi/AgyTHzjBS-c/0.jpg" data-video-id="AgyTHzjBS-c">
                         <div class="video-description">
-                            <h4></h4>
-                            How much Coding to learn for Placements? Data Structure & Algorithms</h4>
+                            How much Coding to learn for Placements? Data Structure & Algorithms
                             <p>Data structure and algorithm : 2024</p>
                                
                         </div>
@@ -672,73 +848,40 @@
                 <!-- Repeat video-grid for more rows... -->
             </div>
         </div>
-
-        <div class="footer">
-            <div class="footer-column">
-                <h3>BROWSE COURSES</h3>
-                <br>
-                <ul>
-                    <li><a href="#">Learn AI</a></li>
-                    <li><a href="#">Learn Python</a></li>
-                    <li><a href="#">Learn Architecture</a></li>
-                    <li><a href="#">Learn Computer Programming</a></li>
-                    <li><a href="#">Learn Software Engineering</a></li>
-                    <li><a href="#">Learn Blockchain</a></li>
-                    <li><a href="#">Learn Project Management</a></li>
-                </ul>
-            </div>
-    
-            
-            
-            <div class="footer-column">
-                <h3>START A NEW CAREER</h3>
-                <br>
-                <ul>
-                    <li><a href="#">Coding Boot Camp</a></li>
-                    <li><a href="#">AI Boot Camp</a></li>
-                    <li><a href="#">Data Analytics Boot Camp</a></li>
-                    <li><a href="#">UX/UI Boot Camp</a></li>
-                    <li><a href="#">Cybersecurity Boot Camp</a></li>
-                    <li><a href="#">UX/UI Boot Camp</a></li>
-                    <li><a href="#">Digital Marketing Boot Camp</a></li>
-    
-                </ul>
-            </div>
-    
-            
-            <div class="footer-column">
-                <h3>COMPLETE YOUR COURSE OFFLINE</h3>
-                <br>
-                <ul>
-                    <li><a href="#">BACHELOR OF TECHNOLOGY</a></li>
-                    <li><a href="#">DIPLOMA</a></li>
-                    <li><a href="#">MASTER OF COMPUETR APPLICATION</a></li>
-                    <li><a href="#">MASTER OF BUSINESS ADMINSTRATION</a></li>
-                    <li><a href="#">MASTER OF TECHNOLOGY</a></li>
-                    <li><a href="#">DOCTOR OF PHILOSOPHY</a></li>
-                    <li><a href="#">ENGINEERING</a></li>
-    
-                </ul>
-            </div>
-            <hr>
-            <hr>
-            <hr>
-            <hr>
-            <hr>
-            <hr>
-            <hr>
-            <img src="figure.jpg" alt="figure"  class="figure">
-            
-        
-        </div>
+<hr>
+        <div id="footer-container"></div>
     </div>
 
     <div class="video-player" id="videoPlayer">
         <span class="close" onclick="closeVideoPlayer()">&times;</span>
         <iframe id="videoIframe" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <button id="generateQuizBtn" style="display: none;" onclick="generateQuizzes()">Generate Quiz</button>
+  
+
+    <div id="quiz-container" class="quiz-container" style="display: none;">
+        <!-- Quiz content will be injected here by JavaScript -->
     </div>
+    
+
+    <div class="success-overlay" id="successOverlay">
+        <div class="success-message">
+            <img src="greentick.png" alt="Success">
+            <h2>Quiz Submitted Successfully!</h2>
+            <p id="score"></p>
+            <button onclick="closeSuccessMessage()">Close</button>
+        </div>
+    </div>
+</div>
+
 
     <script>
+          document.querySelectorAll('.video-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const videoId = item.getAttribute('data-video-id');
+                showVideoPlayer(videoId);
+            });
+        });
+
          function checkLoginStatus() {
             const isLoggedIn = localStorage.getItem('isLoggedIn');
             if (isLoggedIn !== 'true') {
@@ -786,19 +929,114 @@
         });
 
         function showVideoPlayer(videoId) {
-            var videoPlayer = document.getElementById("videoPlayer");
-            var videoIframe = document.getElementById("videoIframe");
+            const videoPlayer = document.getElementById("videoPlayer");
+            const videoIframe = document.getElementById("videoIframe");
             videoIframe.src = "https://www.youtube.com/embed/" + videoId;
             videoPlayer.style.display = "flex";
+            document.getElementById("generateQuizBtn").style.display = "block";
+            document.getElementById("generateQuizBtn").dataset.videoId = videoId;
         }
+
 
         function closeVideoPlayer() {
-            var videoPlayer = document.getElementById("videoPlayer");
-            var videoIframe = document.getElementById("videoIframe");
+            const videoPlayer = document.getElementById("videoPlayer");
+            const videoIframe = document.getElementById("videoIframe");
             videoIframe.src = "";
             videoPlayer.style.display = "none";
+            document.getElementById("generateQuizBtn").style.display = "none";
+            document.getElementById('quiz-container').style.display = 'none'; // Hide quiz container when video player is closed
+        }
+        async function generateQuizzes() {
+            const videoId = document.getElementById("generateQuizBtn").dataset.videoId;
+            try {
+                const response = await fetch('http://localhost:8081/quizzes.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                const data = await response.json();
+                console.log('Fetched data:', data);
+                const quizzes = data[videoId];
+
+                if (quizzes && quizzes.length > 0) {
+                    console.log('Quizzes:', quizzes);
+                    displayQuizzes(quizzes);
+                } else {
+                    alert("No quizzes available for this video.");
+                    document.getElementById('quiz-container').style.display = 'none';
+                }
+            } catch (error) {
+                console.error("Error fetching quizzes:", error);
+            }
         }
 
+        let globalQuizzes = [];
+
+        function displayQuizzes(quizzes) {
+            globalQuizzes = quizzes; // Store quizzes globally
+            const quizContainer = document.getElementById('quiz-container');
+            quizContainer.style.display = 'block';
+            quizContainer.innerHTML = '';
+
+            quizzes.forEach((quiz, index) => {
+                const options = [...quiz.incorrect_answers, quiz.correct_answer];
+                options.sort(() => Math.random() - 0.5);
+
+                const quizHtml = `
+                    <div class="quiz">
+                        <h2>${quiz.question}</h2>
+                        <ul>
+                            ${options.map(option => `
+                                <li>
+                                    <input type="radio" name="answer-${index}" value="${option}">
+                                    <span>${option}</span>
+                                </li>
+                            `).join('')}
+                        </ul>
+                    </div>
+                `;
+                quizContainer.innerHTML += quizHtml;
+            });
+
+            quizContainer.innerHTML += `<button onclick="submitAnswers()">Submit Answers</button>`;
+        }
+
+        function submitAnswers() {
+            let score = 0;
+            const quizzes = document.querySelectorAll('.quiz');
+            quizzes.forEach((quiz, index) => {
+                const userAnswer = quiz.querySelector(`input[name="answer-${index}"]:checked`);
+                const correctAnswer = globalQuizzes[index].correct_answer;
+
+                if (userAnswer) {
+                    const answerSpan = userAnswer.nextElementSibling;
+                    if (userAnswer.value === correctAnswer) {
+                        score++;
+                        answerSpan.classList.add('correct');
+                    } else {
+                        answerSpan.classList.add('incorrect');
+                    }
+                }
+            });
+
+            // Display correct answers below each quiz
+            quizzes.forEach((quiz, index) => {
+                const correctAnswer = globalQuizzes[index].correct_answer;
+                const correctAnswerHtml = `<p><strong>Correct Answer: </strong>${correctAnswer}</p>`;
+                quiz.insertAdjacentHTML('beforeend', correctAnswerHtml);
+            });
+
+            // Display Success Message
+            const successOverlay = document.getElementById('successOverlay');
+            const scoreParagraph = document.getElementById('score');
+            scoreParagraph.innerText = `You scored ${score} out of ${globalQuizzes.length}`;
+            successOverlay.style.display = 'flex';
+        }
+
+        function closeSuccessMessage() {
+            const successOverlay = document.getElementById('successOverlay');
+            successOverlay.style.display = 'none';
+            // Keep quiz container visible with highlighted answers
+        }
         function logout() {
             localStorage.removeItem('isLoggedIn');
             window.location.href = "index.html";
@@ -820,6 +1058,73 @@ document.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('load', () => {
   bufferContainer.style.display = 'none';
 });
+
+function loadFooter() {
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    }
+
+    // Call the function to load the footer when the page loads
+    loadFooter();
+
+// for search functionality
+document.querySelector('.search-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent the default form submission
+
+    const query = document.getElementById('searchInput').value.toLowerCase();
+    const videoItems = document.querySelectorAll('.video-item');
+    let found = false; // To check if any videos match the search query
+
+    console.log("Search query:", query); // Debugging
+
+    videoItems.forEach(item => {
+        const title = item.querySelector('.course-tittle') ? item.querySelector('.course-tittle').innerText.toLowerCase() : '';
+        const channel = item.querySelector('.channel') ? item.querySelector('.channel').innerText.toLowerCase() : '';
+        const description = item.querySelector('p') ? item.querySelector('p').innerText.toLowerCase() : '';
+
+        console.log("Video item details - Title:", title, "Channel:", channel, "Description:", description); // Debugging
+
+        if (title.includes(query) || channel.includes(query) || description.includes(query)) {
+            console.log("Match found for:", title); // Debugging
+            item.style.display = 'block'; // Show matching items
+            found = true;
+        } else {
+            item.style.display = 'none'; // Hide non-matching items
+        }
+    });
+
+    if (!found) {
+        alert("No matching videos found!");
+    }
+});
+
+//for Dark mode and light mode
+const modeToggle = document.getElementById('modeToggle');
+const body = document.body;
+
+modeToggle.addEventListener('change', () => {
+  if (modeToggle.checked) {
+    body.classList.add('dark-mode');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    body.classList.remove('dark-mode');
+    localStorage.setItem('theme', 'light');
+  }
+});
+
+// Apply the saved theme on page load
+window.addEventListener('load', () => {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    modeToggle.checked = true;
+    body.classList.add('dark-mode');
+  }
+});
+
 
     </script>
 </body>
